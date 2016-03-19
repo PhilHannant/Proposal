@@ -1,17 +1,47 @@
 \documentclass{article} \title{Proposal} \author{Philip Hannant} 
 
 \begin{document} \maketitle{} \section{Introduction \& Background}
+
+Needs to add history of all the work carried out on audio analysis with an emphasis on tempo detection
+
 Beat detection and tempo analysis is a fundamental skill honed by musicians and in particularly drummers, their ability to perform at a consistent tempo determines a piece of musics rhythm. 
+
+Describe how far it has come and MIREX group
 
 There has been a lot of work carried out in the field of tempo detection, Hugh Christopher Longuet-Higgins work probably represented the first attempt to follow beat performance in relation to tempo [1]. 
 
+Describe current tempo detection systems for drummers in midi and how current use of tempo detection algorithms in software for djs - highlight possible implementation of a training system for drummers to perfect their timing.
+
+http://www.roland.co.uk/blog/exploring-roland-dt-1-v-drums-tutor-software/ - such systems currently are only available for midi instruments as the timing data is recorded using midi triggers (describe triggers) so offer an very high degree of accuracy
+
+\subsection{}
 
 \maketitle{} \section{Aims and Objectives}
+As part of my project I propose to build a real time drumbeat tempo analyser which wiill implement a variety of different wave analysis algorithms. sound energy analysis and discrete wavelet transform technologies. I will provide more details regarding the system architecture in the following sections. 
+
+Investigate with a sole focus on drums how accurate/reliable the beatroot and discrete wavelet transform algorithms are in order to ascertain how viable a future mobile metronome and drum tempo training application would be.
 
 
+
+\subsection{Proposed Architecture}
+In order to function sufficiently the system will need to encompass the following features:
+
+\begin{itemize}
+\item Provide real time feedback to player on the tempo of the current drum beat.
+\item 
+\item Sufficent signal processing, the solution will need to process the audio in appropirate durations 
+\end{itemize}
+
+\subsubsection
 
 \maketitle{} 
 \section{Development Plan for the Solution}
+
+Adapt beetroot library in order to allow for efficient real time analysis
+
+implement matlab algorithm in scala/java
+
+develop audio capture and processing system 
 
 \maketitle{} 
 \section{Project Schedule}
