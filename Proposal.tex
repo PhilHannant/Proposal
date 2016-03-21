@@ -3,6 +3,9 @@
 \setlength{\textheight}{9.5in}
 \setlength{\oddsidemargin}{-.1in}
 \setlength{\textwidth}{6.5in}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
 \title{Proposal} \author{Philip Hannant} 
 
 \begin{document} \maketitle{} \section{Introduction \& Background}
@@ -13,18 +16,19 @@ This method however was not considered accurate enough to fully replicate the sk
 
 
 
+Beat detection became more widely recgnised in 2005 when the 1st annual Music Information Retrieval Evaluation eXchange (MIREX) was held. MIREX has been set up as a contest with the goal of comparing state-of-the-art algorithms and music information retrieval [MIREX website]. The topics to be evaluated were proposed by the participants and in the first year, three of the nine topics concerned beat detection (Audio Drum Detection, Audio Onset Detection and Audio Tempo Extraction).  
+
 
 Needs to add history of all the work carried out on audio analysis with an emphasis on tempo detection
 
 Beat detection and tempo analysis is a fundamental skill honed by musicians and in particularly drummers, their ability to perform at a consistent tempo determines a piece of musics rhythm. 
 
-Describe how far it has come and MIREX group
+To date, the majority beat detection software has focused mainly on the dj industry where tempo and beat matching are popular aspects to be included in modern dj programs. There are however other sectors of the music industry would find beat detection software a useful, in particular, drummers could find it an enormously useful training tool. There are currently many systems available to a drummer, for example Roland include drum tutoring software with some of their V-Drums modules [roland ref]. These systems are however all restricted to electronic drum kits which utilise midi triggers to produce the drum sounds. The training software can therefore be easily linked to these events in order to provide live feedback on the overall tempo being played as well as which exact information on the timing of each hit on the various parts of the drum kit. 
 
-There has been a lot of work carried out in the field of tempo detection, Hugh Christopher Longuet-Higgins work probably represented the first attempt to follow beat performance in relation to tempo [1]. 
+\includegraphics[scale=0.2]{dt-1_ss_main_notation_gal} 
 
-Describe current tempo detection systems for drummers in midi and how current use of tempo detection algorithms in software for djs - highlight possible implementation of a training system for drummers to perfect their timing.
 
-http://www.roland.co.uk/blog/exploring-roland-dt-1-v-drums-tutor-software/ - such systems currently are only available for midi instruments as the timing data is recorded using midi triggers (describe triggers) so offer an very high degree of accuracy
+
 
 \subsection{}
 
@@ -58,6 +62,9 @@ develop audio capture and processing system
 \maketitle{} 
 \section{Project Schedule}
 
+\maketitle{} 
+\section{References}
+http://www.roland.co.uk/blog/exploring-roland-dt-1-v-drums-tutor-software/
 
 
 \end{document}
