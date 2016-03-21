@@ -14,9 +14,9 @@ Detecting musical time is a skill which is not only a fundamental musical skill 
 
 This method however was not considered accurate enough to fully replicate the skill of a trained musician at beat detection, it was soon recognised that onset detection would play a fundamental part in any future beat detection algorithms. Where the an indicator of a new onset is seen as ``an increase in energy (or amplitude) within some frequency band(s)'' [4].
 
+Need to include the different types of 
 
-
-Beat detection became more widely recgnised in 2005 when the 1st annual Music Information Retrieval Evaluation eXchange (MIREX) was held. MIREX has been set up as a contest with the goal of comparing state-of-the-art algorithms and music information retrieval [MIREX website]. The topics to be evaluated were proposed by the participants and in the first year, three of the nine topics concerned beat detection (Audio Drum Detection, Audio Onset Detection and Audio Tempo Extraction).  
+Due to the rapidly expanding research being carried out on beat detection, in 2005 the 1st annual Music Information Retrieval Evaluation eXchange (MIREX) was held. MIREX has been set up as a contest with the goal of comparing state-of-the-art algorithms and music information retrieval [MIREX website]. The topics to be evaluated were proposed by the participants and in the first year, three of the nine topics concerned beat detection (Audio Drum Detection, Audio Onset Detection and Audio Tempo Extraction).  
 
 
 Needs to add history of all the work carried out on audio analysis with an emphasis on tempo detection
@@ -42,6 +42,10 @@ Investigate with a sole focus on drums how accurate/reliable the beatroot and di
 \subsection{Proposed Architecture}
 In order to function sufficiently the system will need to encompass the following features:
 
+The open sourced JWave library includes a Java implementation of the Discrete Wavelet Transform (DFT) algorithm.
+
+Beatroot has 
+
 \begin{itemize}
 \item Provide real time feedback to player on the tempo of the current drum beat.
 \item 
@@ -50,8 +54,13 @@ In order to function sufficiently the system will need to encompass the followin
 
 
 
+
 \maketitle{} 
 \section{Development Plan for the Solution}
+
+\subsection{Overview of External Libraries}
+
+
 
 Adapt beetroot library in order to allow for efficient real time analysis
 
@@ -61,6 +70,18 @@ develop audio capture and processing system
 
 \maketitle{} 
 \section{Project Schedule}
+
+\begin{table}[H]
+\caption{Project Timeline} 
+\centering
+\begin{tabular}{ | L |c| L |}
+\hline\hline 
+Dates & Task & Priority\\ [0.5ex]
+\hline 
+Jun 13 - Jun 19 & Integrate APIs and external libraries & MUST
+\end{tabular}
+\label{stages} 
+\end{table}
 
 \maketitle{} 
 \section{References}

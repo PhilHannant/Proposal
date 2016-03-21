@@ -1,9 +1,10 @@
 # Fdb version 3
-["pdflatex"] 1458596329 "/Users/philhannant/Proposal/Proposal.tex" "/Users/philhannant/Proposal/Proposal.pdf" "Proposal" 1458596329
-  "/Users/philhannant/Proposal/Proposal.aux" 1458596329 577 abc77457b64f90f14f8538605153c28b ""
-  "/Users/philhannant/Proposal/Proposal.tex" 1458596327 4741 8d6c9a9b65205104ef0f759774d94e95 ""
+["pdflatex"] 1458598958 "/Users/philhannant/Proposal/Proposal.tex" "/Users/philhannant/Proposal/Proposal.pdf" "Proposal" 1458598958
+  "/Users/philhannant/Proposal/Proposal.aux" 1458598958 790 4753cecc0500f77afd0b501eae1439f5 ""
+  "/Users/philhannant/Proposal/Proposal.tex" 1458598951 5229 d3f20c555915a76bbd4de6b2c7774787 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1136768653 1520 eccf95517727cb11801f4f1aee3a21b4 ""
@@ -46,12 +47,12 @@
   "/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1432479641 1764542 91654ba72bdb667e84ea24f076ae16d8 ""
   "/usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt" 1457264687 3849858 7e29a5a5da7f121efe62c50b21a1f5dd ""
   "/usr/local/texlive/2015/texmf.cnf" 1432479636 577 0d611272082f3cdb8e80e09a3c69cf07 ""
-  "Proposal.aux" 1458596329 577 abc77457b64f90f14f8538605153c28b ""
-  "Proposal.tex" 1458596327 4741 8d6c9a9b65205104ef0f759774d94e95 ""
+  "Proposal.aux" 1458598958 790 4753cecc0500f77afd0b501eae1439f5 ""
+  "Proposal.tex" 1458598951 5229 d3f20c555915a76bbd4de6b2c7774787 ""
   "images/dt-1_ss_main_notation_gal.jpg" 1458595009 139320 af842537a3b90a62cb9f5df3cd31efea ""
   (generated)
-  "/Users/philhannant/Proposal/Proposal.log"
-  "Proposal.pdf"
   "Proposal.aux"
+  "Proposal.pdf"
   "/Users/philhannant/Proposal/Proposal.pdf"
+  "/Users/philhannant/Proposal/Proposal.log"
   "Proposal.log"
