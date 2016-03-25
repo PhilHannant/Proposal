@@ -10,6 +10,14 @@
 
 \begin{document} \maketitle{} \section{Introduction \& Background}
 
+
+
+Having played the drums for nearly twenty years I have experienced a number of different training tools in order to improve my timing, these tools have always been exclusive to midi driven electric drum kits. These drum kits are able to include training tools within their drum modules which utilise the midi events being triggered by the player and give live feedback to the exact timing and instrument being played. An example of such a system is the Roland DT-1 V-Drums tutor which is a software package that can be connected to their V-Drum modules in order to provide the player with an interactive experience in order to help a drummer improve their rhythm, coordination sight reading. Such an extensive range of tutoring functions is only made possible by the midi events that are intrinsic to an electronic drum kits function (an example of the GUI can be found in figure 1) [roland ref].
+
+\includegraphics[scale=0.2]{dt-1_ss_main_notation_gal} 
+
+\subsection{Current Systems}
+
 Detecting musical time is a skill which is not only a fundamental musical skill [1] but also something that can seemingly come naturally to humans, the majority being able to analyse and reproduce discrete metrical stuctures of a piece of music [2]. Producing algorithms to replicate this nature human ability is probably first attempted by Longuet-Higgins [1], where he began to consider that rhythm as a binary tree with each node representing a note or rest. This theory developed into a system which would use a static tolerence limit on how much a the downbeats varied and enabling the perceived tempo to be adjusted accordingly [add longuet references]. Since Longuet-Higgins first work there have been a number of systems developed to perform beat tracking and temporal analysis with the majority using the ``surfboard'' method first described by schloss which observed the peaks of sound energy within a piece of music in order to discern the beat locations and temporal information [schloss]. 
 
 This method however was not considered accurate enough to fully replicate the skill of a trained musician at beat detection, it was soon recognised that onset detection would play a fundamental part in any future beat detection algorithms. Where the an indicator of a new onset is seen as ``an increase in energy (or amplitude) within some frequency band(s)'' [4].
@@ -26,9 +34,7 @@ Needs to add history of all the work carried out on audio analysis with an empha
 
 Beat detection and tempo analysis is a fundamental skill honed by musicians and in particularly drummers, their ability to perform at a consistent tempo determines a piece of musics rhythm. 
 
-To date, the majority beat detection software has focused mainly on the dj industry where tempo and beat matching are popular aspects to be included in modern dj programs. There are however other sectors of the music industry would find beat detection software a useful, in particular, drummers could find it an enormously useful training tool. There are currently many systems available to a drummer, for example Roland include drum tutoring software with some of their V-Drums modules [roland ref]. These systems are however all restricted to electronic drum kits which utilise midi triggers to produce the drum sounds. The training software can therefore be easily linked to these events in order to provide live feedback on the overall tempo being played as well as which exact information on the timing of each hit on the various parts of the drum kit. 
-
-\includegraphics[scale=0.2]{dt-1_ss_main_notation_gal} 
+To date, the majority beat detection software has focused mainly on the dj industry where tempo and beat matching are popular aspects to be included in modern dj programs. There are however other sectors of the music industry would find beat detection software a useful, in particular, drummers could find it an enormously useful training tool. There are currently many systems available to a drummer, 
 
 
 
