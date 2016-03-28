@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.6)  21 MAR 2016 22:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.6)  28 MAR 2016 13:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -123,17 +123,47 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: images/dt-1_ss_main_notation_gal.jpg Graphic file (type jpg)
 <use images/dt-1_ss_main_notation_gal.jpg>
 Package pdftex.def Info: images/dt-1_ss_main_notation_gal.jpg used on input lin
-e 28.
+e 17.
 (pdftex.def)             Requested size: 182.67926pt x 133.69713pt.
+! Misplaced alignment tab character &.
+l.21 ...nstruments during a piece of music [Goto &
+                                                   muroaka]. In 2001 Simon D...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
 [1
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 50.
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/
+philhannant/Proposal/images/dt-1_ss_main_notation_gal.jpg>]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.23 ...music[https://en.wikipedia.org/wiki/Onset_
+                                                  (audio)] and therefore can...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 23.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.24 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 71.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
 
 ! LaTeX Error: Unknown float option `H'.
 
@@ -141,12 +171,10 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.74 \begin{table}[H]
+l.97 \begin{table}[H]
                      
 Option `H' ignored and `p' used.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 77.
 
 ! LaTeX Error: Illegal character in array arg.
 
@@ -154,8 +182,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.77 \begin{tabular}{ | L |c| L |}
-                                  
+l.100 \begin{tabular}{ | L |L| L |}
+                                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -166,32 +194,45 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.77 \begin{tabular}{ | L |c| L |}
-                                  
+l.100 \begin{tabular}{ | L |L| L |}
+                                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[2 </Users/philhannant/Proposal/images/dt-1_ss_main_notation_gal.jpg>] [3] (/Us
-ers/philhannant/Proposal/Proposal.aux) ) 
+
+! LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.100 \begin{tabular}{ | L |L| L |}
+                                   
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[3] [4] (/Users/philhannant/Proposal/Proposal.aux) ) 
 Here is how much of TeX's memory you used:
  1515 strings out of 493089
  22204 string characters out of 6134843
- 81278 words of memory out of 5000000
+ 82278 words of memory out of 5000000
  5003 multiletter control sequences out of 15000+600000
  8503 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,7n,24p,1045b,196s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb>
-Output written on /Users/philhannant/Proposal/Proposal.pdf (3 pages, 208060 byt
+ 37i,7n,24p,1384b,196s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on /Users/philhannant/Proposal/Proposal.pdf (4 pages, 230798 byt
 es).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 23 compressed objects within 1 object stream
+ 46 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
