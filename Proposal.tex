@@ -5,13 +5,26 @@
 \setlength{\textwidth}{6.5in}
 \usepackage{graphicx}
 \graphicspath{ {images/} }
+\usepackage{datetime}
 
-\title{Proposal} \author{Philip Hannant} 
+\begin{titlepage}
 
-\begin{document} \maketitle{} \section{Introduction \& Background}
+\LARGE\title{Real Time Tempo Analysis of Drum Beats}
+
+\LARGE\author{Author: \textbf{Philip Hannant}, Supervisor: \textbf{Professor Steve Maybank}}
 
 
 
+\end{titlepage}
+
+\begin{document} 
+
+\maketitle
+\newpage
+\tableofcontents
+\clearpage
+
+\maketitle{} \section{Introduction \& Background}
 Having played the drums for nearly twenty years I have experienced a number of different training tools in order to improve my timing, these tools have always been exclusive to midi driven electric drum kits. These drum kits are able to include training tools within their drum modules which utilise the midi events being triggered by the player and give live feedback to the exact timing and instrument being played. An example of such a system is the Roland DT-1 V-Drums tutor which is a software package that can be connected to their V-Drum modules in order to provide the player with an interactive experience in order to help a drummer improve their rhythm, coordination sight reading. Such an extensive and accurate range of tutoring functions is only made possible by the midi events that are intrinsic to an electronic drum kits function. (an example of the GUI can be found in figure 1) [roland ref]. These tutoring tools are not however available to a drummer who does not own an electronic drum kit, they are restricted to using a metronome and using their ear to determine their timing and rhythm. To address this, I intend to investigate the current audio tempo analysis and beat tracking algorithms available solely for the purpose of being implemented within an drum tutoring software package for the use with acoustic drums.
 6, 3, 7, 2, 1
 \includegraphics[scale=0.2]{dt-1_ss_main_notation_gal} 
@@ -91,8 +104,11 @@ In order to capture and process live audio the Javax Sound package will be ulitl
 \end{itemize}
 
 \subsection{Comparative analysis of Beatroot and JWave}
-A key part of this project is to ascertain whether the technologies currently available are accurate enough to create a training tool similar to the midi based software described in section 1. To achieve this the 2 libraries will need to be run concurrently with the same captured audio
+A key part of this project is to ascertain whether the technologies currently available are accurate enough to create a training tool similar to the midi based software described in section 1. To achieve this the 2 libraries will need to be run in parallel with the same captured audio and a predetermined set of parameters recorded. For the tempo analysis this will simply be the bpm recorded at the end of each frame, all of the bpm's within the sample set will be exact and in order to match the current midi software packages accuracy any returned bpm's should be exact. However, very small deviations in tempo can be very hard to detect to the human ear so some margin of error will be applied. To account for the fact that at the slower bpm's any beat out of place will be a lot easier to notice than at a higher bpm, the margin for error will be weighted by using the following equation;
 
+\[ m = bpm - 60 * 0.0001\]
+
+where \(m\) represents the weighted value for the margin for error to be applied.
 
 \subsection{Develop GUI \& logging system}
 
@@ -112,7 +128,7 @@ Musical styles will comprise of rock \& pop, blues and jazz, with the main empha
 \maketitle{} 
 \section{Project Schedule}
 
-\begin{table}[6]
+\begin{table}[]
 \caption{Project Timeline} 
 \centering
 \begin{tabular}{|p{4cm}|p{8cm}|}
@@ -153,9 +169,9 @@ w/c 19th September & Submit report\\
 \maketitle{} 
 \section{References}
 http://www.roland.co.uk/blog/exploring-roland-dt-1-v-drums-tutor-software/
-https://en.wikipedia.org/wiki/Pulse-code_modulation
-http://www.jsresources.org/faq_audio.html#frame_rate
-https://en.wikipedia.org/wiki/Onset_(audio)
-http://www.music-ir.org/mirex/wiki/2016:Audio_Onset_Detection
+https://en.wikipedia.org/wiki/Pulse-code\_modulation
+http://www.jsresources.org/faq\_audio.html\#frame\_rate
+https://en.wikipedia.org/wiki/Onset\_(audio)
+http://www.music-ir.org/mirex/wiki/2016:Audio\_Onset\_Detection
 
 \end{document}
