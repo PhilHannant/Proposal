@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.6)  28 MAR 2016 18:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.6)  28 MAR 2016 21:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -125,38 +125,10 @@ File: images/dt-1_ss_main_notation_gal.jpg Graphic file (type jpg)
 Package pdftex.def Info: images/dt-1_ss_main_notation_gal.jpg used on input lin
 e 17.
 (pdftex.def)             Requested size: 182.67926pt x 133.69713pt.
-! Misplaced alignment tab character &.
-l.21 ...nstruments during a piece of music [Goto &
-                                                   muroaka]. In 2001 Simon D...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/
 philhannant/Proposal/images/dt-1_ss_main_notation_gal.jpg>]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.23 ...music[https://en.wikipedia.org/wiki/Onset_
-                                                  (audio)] and therefore can...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 23.
-! Missing $ inserted.
-<inserted text> 
-                $
-l.24 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 62.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -165,26 +137,21 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 62.
 [2] [3]
 
-! LaTeX Error: Unknown float option `H'.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 115.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.107 \begin{table}[H]
-                      
-Option `H' ignored and `p' used.
-
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 118.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.148 https://en.wikipedia.org/wiki/Pulse-code_
+l.156 https://en.wikipedia.org/wiki/Pulse-code_
                                                modulation
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! You can't use `macro parameter character #' in math mode.
-l.149 http://www.jsresources.org/faq_audio.html#
+l.157 http://www.jsresources.org/faq_audio.html#
                                                 frame_rate
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -194,22 +161,30 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.150 
+l.160 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (81.09154pt too wide) in paragraph at lines 147--150
+Overfull \hbox (81.09154pt too wide) in paragraph at lines 155--160
 \OT1/cmr/m/n/10.95 http://www.roland.co.uk/blog/exploring-roland-dt-1-v-drums-t
 utor-software/ https://en.wikipedia.org/wiki/Pulse-
+ []
+
+
+Overfull \hbox (126.10153pt too wide) in paragraph at lines 155--160
+\OT1/cmr/m/n/10.95 code$[]\OML/cmm/m/it/10.95 odulationhttp \OT1/cmr/m/n/10.95 
+: \OML/cmm/m/it/10.95 ==www:jsresources:org=faq[]udio:htmlframe[]atehttps \OT1/
+cmr/m/n/10.95 : \OML/cmm/m/it/10.95 ==en:wikipedia:org=wiki=Onset[]audio\OT1/cm
+r/m/n/10.95 )\OML/cmm/m/it/10.95 http \OT1/cmr/m/n/10.95 :
  []
 
 [4] [5] (/Users/philhannant/Proposal/Proposal.aux) ) 
 Here is how much of TeX's memory you used:
  1516 strings out of 493089
  22220 string characters out of 6134843
- 83270 words of memory out of 5000000
+ 86270 words of memory out of 5000000
  5003 multiletter control sequences out of 15000+600000
  8811 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -224,7 +199,7 @@ t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on /Users/philhannant/Proposal/Proposal.pdf (5 pages, 252942 byt
+Output written on /Users/philhannant/Proposal/Proposal.pdf (5 pages, 255954 byt
 es).
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)

@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1459185752 "/Users/philhannant/Proposal/Proposal.tex" "/Users/philhannant/Proposal/Proposal.pdf" "Proposal" 1459185753
-  "/Users/philhannant/Proposal/Proposal.aux" 1459185753 1058 ce285ff9a40abea18250679dc6a8209c ""
-  "/Users/philhannant/Proposal/Proposal.tex" 1459185750 10819 2ec538c3e3f8c1388110f259363e368e ""
+["pdflatex"] 1459197578 "/Users/philhannant/Proposal/Proposal.tex" "/Users/philhannant/Proposal/Proposal.pdf" "Proposal" 1459197579
+  "/Users/philhannant/Proposal/Proposal.aux" 1459197579 1252 375a255abc756a41feef3a8b6a5c1463 ""
+  "/Users/philhannant/Proposal/Proposal.tex" 1459197577 12083 892f5c5e8d4d3c01e4c816cb0294c1e7 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -52,12 +52,12 @@
   "/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1432479641 1764542 91654ba72bdb667e84ea24f076ae16d8 ""
   "/usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt" 1457264687 3849858 7e29a5a5da7f121efe62c50b21a1f5dd ""
   "/usr/local/texlive/2015/texmf.cnf" 1432479636 577 0d611272082f3cdb8e80e09a3c69cf07 ""
-  "Proposal.aux" 1459185753 1058 ce285ff9a40abea18250679dc6a8209c ""
-  "Proposal.tex" 1459185750 10819 2ec538c3e3f8c1388110f259363e368e ""
+  "Proposal.aux" 1459197579 1252 375a255abc756a41feef3a8b6a5c1463 ""
+  "Proposal.tex" 1459197577 12083 892f5c5e8d4d3c01e4c816cb0294c1e7 ""
   "images/dt-1_ss_main_notation_gal.jpg" 1458595009 139320 af842537a3b90a62cb9f5df3cd31efea ""
   (generated)
-  "Proposal.aux"
   "Proposal.log"
   "Proposal.pdf"
   "/Users/philhannant/Proposal/Proposal.log"
   "/Users/philhannant/Proposal/Proposal.pdf"
+  "Proposal.aux"

@@ -18,9 +18,9 @@ Having played the drums for nearly twenty years I have experienced a number of d
 
 \subsection{Current Systems}
 
-Detecting musical time is a skill which is not only a fundamental musical skill [1] but also something that can seemingly come naturally to humans, the majority being able to analyse and reproduce discrete metrical stuctures of a piece of music [2]. Producing algorithms to replicate this nature human ability is probably first attempted by Longuet-Higgins [1], where he began to consider that rhythm as a binary tree with each node representing a note or rest. This theory developed into a system which would use a static tolerence limit on how much a the downbeats varied and enabling the perceived tempo to be adjusted accordingly [add longuet references]. Since Longuet-Higgins first work there have been a number of different approaches to beat detection in audio, M. Goto and Y. Muraoka created a system which would learn the frequencies of the bass drum and snare drum, in order to then detect events triggered by these instruments during a piece of music [Goto & muroaka]. In 2001 Simon Dixon presented a system which uses processed a piece of audio in order to generate a tempo hypotheses at various metrical levels, multiple agents were then employed to find the sequence of beat times which best matched the salient rhythmic events which were originally detected.
+Detecting musical time is a skill which is not only a fundamental musical skill [1] but also something that can seemingly come naturally to humans, the majority being able to analyse and reproduce discrete metrical stuctures of a piece of music [2]. Producing algorithms to replicate this nature human ability is probably first attempted by Longuet-Higgins [1], where he began to consider that rhythm as a binary tree with each node representing a note or rest. This theory developed into a system which would use a static tolerence limit on how much a the downbeats varied and enabling the perceived tempo to be adjusted accordingly [add longuet references]. Since Longuet-Higgins first work there have been a number of different approaches to beat detection in audio, M. Goto and Y. Muraoka created a system which would learn the frequencies of the bass drum and snare drum, in order to then detect events triggered by these instruments during a piece of music [Goto \& muroaka]. In 2001 Simon Dixon presented a system which uses processed a piece of audio in order to generate a tempo hypotheses at various metrical levels, multiple agents were then employed to find the sequence of beat times which best matched the salient rhythmic events which were originally detected.
 
-The majority of the audio beat detection systems developed to date rely on an onset detection function, where an audio onset is considered to be the beginning of each music note within a piece of music[https://en.wikipedia.org/wiki/Onset_(audio)] and therefore can be used to find time-locations within all sonic events in a piece of music [https://en.wikipedia.org/wiki/Onset_(audio)]. 
+The majority of the audio beat detection systems developed to date rely on an onset detection function, where an audio onset is considered to be the beginning of each music note within a piece of music[wiki onset] and therefore can be used to find time-locations within all sonic events in a piece of music [MIREX]. 
 
 
 
@@ -81,7 +81,7 @@ The first part of this project involves the setting
 In order to capture and process live audio the Javax Sound package will be ulitlised, where the audio will be captured using the Java Line hierachy; specifically the TargetDataLine class, which requires an instance of the Javax Sound AudioFormat class to be parsed in to work. The AudioFormat class is made up of a number of constructed fields which are defined as follows:
 
 \begin{itemize}
-\item Encoding - This will be set to ``''PCM.signed``'', representing audio encoded to the native linea pulse code modulation, where quantization levels are linearly uniform [wiki].
+\item Encoding - This will be set to ``''PCM.signed``'', representing audio encoded to the native linear pulse code modulation, where quantization levels are linearly uniform [wiki].
 \item Sample Rate - 44,100, set to match CD quality for the number of analogs samples which will be analysed per second. 
 \item Sample Size in Bits - 24, based on a sound card with a 24 bit sample depth.
 \item Channels - 2, audio will be captured using a stereo microphone.
@@ -94,17 +94,25 @@ In order to capture and process live audio the Javax Sound package will be ulitl
 A key part of this project is to ascertain whether the technologies currently available are accurate enough to create a training tool similar to the midi based software described in section 1. To achieve this the 2 libraries will need to be run concurrently with the same captured audio
 
 
+\subsection{Develop GUI \& logging system}
 
 
-Adapt beetroot library in order to allow for efficient real time analysis
+\subsection{Build Extensive drum sample set}
+The success of this project will rely heavily on the amount of data that the system can produce and in order to do this a large set of drum beat samples will need to be created. The drum beats themselves will be created using the installed midi drumbeats with the Apple software package, Garageband. The sample set will need to contains beats from a variety of styles as well as samples with fluctuating tempos. The main aspects of the sample set can be found below:
 
-implement matlab algorithm in scala/java
+\begin{itemize}
+\item The tempo range will be 60 - 160 beats per minute (bpm), although some samples will be be created with varying tempos in order to closely reflect a real human player
+\item The time signatures will be mainly in common time (4/4) to reflect playing styles, however some beats will use swing time which will either be created by feel within the sample or by using triplets with a duple meter in 12/8
+\item Velocities will be varied across the sample set, accent and ghost notes will be used in line with a real playing style
+\item The sample set will contain a wide range of drum beats, including; beats using one drum, those only with a back beat, beats incorporating single rests within a bar or for the whole duration of a bar \& beats with large solos and cymbal work
+\end{itemize} 
 
+Musical styles will comprise of rock \& pop, blues and jazz, with the main emphasis failing on rock \& pop beats. Each style will have between 5 - 10 unique samples created, which will in turn each sampled with a bpm value starting at 60 and increasing in steps of 5 up until the maximum, which will account for approximately 500 separate samples. There will also be a final set of simple single and multiple drum beats included which will produce another c. 10 unique samples, which will give a total sample set size of c. 750 samples.
 
 \maketitle{} 
 \section{Project Schedule}
 
-\begin{table}[H]
+\begin{table}[6]
 \caption{Project Timeline} 
 \centering
 \begin{tabular}{|p{4cm}|p{8cm}|}
@@ -147,5 +155,7 @@ w/c 19th September & Submit report\\
 http://www.roland.co.uk/blog/exploring-roland-dt-1-v-drums-tutor-software/
 https://en.wikipedia.org/wiki/Pulse-code_modulation
 http://www.jsresources.org/faq_audio.html#frame_rate
+https://en.wikipedia.org/wiki/Onset_(audio)
+http://www.music-ir.org/mirex/wiki/2016:Audio_Onset_Detection
 
 \end{document}
