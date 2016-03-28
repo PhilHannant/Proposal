@@ -45,7 +45,7 @@ To date, the majority beat detection software has focused mainly on the dj indus
 
 
 
-\subsection{}
+\subsection{Beatroot and JWave}
 
 \maketitle{} \section{Aims and Objectives}
 
@@ -81,8 +81,8 @@ The first part of this project involves the setting
 In order to capture and process live audio the Javax Sound package will be ulitlised, where the audio will be captured using the Java Line hierachy; specifically the TargetDataLine class, which requires an instance of the Javax Sound AudioFormat class to be parsed in to work. The AudioFormat class is made up of a number of constructed fields which are defined as follows:
 
 \begin{itemize}
-\item Encoding - This will be set to ``''PCM.signed``'', representing audio encoded to the native linea pulse code modulation, where quantization levels are linearly uniform [https://en.wikipedia.org/wiki/Pulse-code_modulation].
-\item Sample Rate - 44,100, set to match cd quality for the number of analogs samples which will be analysed per second. 
+\item Encoding - This will be set to ``''PCM.signed``'', representing audio encoded to the native linea pulse code modulation, where quantization levels are linearly uniform [wiki].
+\item Sample Rate - 44,100, set to match CD quality for the number of analogs samples which will be analysed per second. 
 \item Sample Size in Bits - 24, based on a sound card with a 24 bit sample depth.
 \item Channels - 2, audio will be captured using a stereo microphone.
 \item Frame Size - 6, where frame size equals the number of bytes in a sample multiplied by the number of channels.
@@ -90,9 +90,9 @@ In order to capture and process live audio the Javax Sound package will be ulitl
 \item Big Endian (boolean) - false, as the project will be developed on an Intel core which uses a little endian architecture. Where endianess refers to the order of bytes which make up a digital word, with big endianess storing the most significant byte at a certain memory address and the remaining bytes being stored in the following higher memory addresses. The little-endian formate reverses the order storing the least significant at the lowest and most siginicant at the highest memory address [https://en.wikipedia.org/wiki/Endianness].
 \end{itemize}
 
-\subsection{}
+\subsection{Comparative analysis of Beatroot and JWave}
+A key part of this project is to ascertain whether the technologies currently available are accurate enough to create a training tool similar to the midi based software described in section 1. To achieve this the 2 libraries will need to be run concurrently with the same captured audio
 
-\subsection{Overview of External Libraries}
 
 
 
@@ -100,7 +100,6 @@ Adapt beetroot library in order to allow for efficient real time analysis
 
 implement matlab algorithm in scala/java
 
-develop audio capture and processing system 
 
 \maketitle{} 
 \section{Project Schedule}
@@ -108,18 +107,45 @@ develop audio capture and processing system
 \begin{table}[H]
 \caption{Project Timeline} 
 \centering
-\begin{tabular}{ | L |L| L |}
-\hline\hline 
-Dates & Task & Priority\\ [0.5ex]
+\begin{tabular}{|p{4cm}|p{8cm}|}
+ \hline
+\textbf{Dates} & \textbf{Task}\\ [0.5ex]
 \hline 
-Jun 13 - Jun 19 & Integrate APIs and external libraries & MUST
+w/c 13th June & Develop live audio capturing system\\
+\hline 
+w/c 20th June & Set up Beatroot library in development environment\\
+\hline 
+w/c 27th June & Implement DWT tempo and beat detection algorithm in Scala/Java\\
+\hline 
+w/c 4th July & Test systems with single live audio source\\
+\hline 
+w/c 11th July & Develop system to store data generated during tempo analysis\\
+\hline 
+w/c 18th July & Research and build appropriate framework to process captured audio in parallel e.g. akka actors\\
+\hline 
+w/c 1st August & Create sample set of drum beats\\
+\hline 
+w/c 8th August & Test system using full sample set\\
+\hline 
+w/c 15th August & Develop UI\\
+\hline 
+w/c 22nd August & Analyse logged data\\
+\hline 
+w/c 29th August & Write up report\\
+\hline 
+w/c 5th September & Present findings to project supervisor\\
+\hline 
+w/c 12th September & Finalise report\\
+\hline 
+w/c 19th September & Submit report\\
+\hline
 \end{tabular}
-\label{stages} 
 \end{table}
 
 \maketitle{} 
 \section{References}
 http://www.roland.co.uk/blog/exploring-roland-dt-1-v-drums-tutor-software/
-
+https://en.wikipedia.org/wiki/Pulse-code_modulation
+http://www.jsresources.org/faq_audio.html#frame_rate
 
 \end{document}

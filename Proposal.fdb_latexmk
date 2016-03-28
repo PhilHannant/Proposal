@@ -1,8 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1459179048 "/Users/philhannant/Proposal/Proposal.tex" "/Users/philhannant/Proposal/Proposal.pdf" "Proposal" 1459179048
-  "/Users/philhannant/Proposal/Proposal.aux" 1459179048 1054 3046be26bf9599e7a7831ac1290f276b ""
-  "/Users/philhannant/Proposal/Proposal.tex" 1459179045 9378 29f85799efc2c372efe3bc201e7b98b2 ""
+["pdflatex"] 1459185752 "/Users/philhannant/Proposal/Proposal.tex" "/Users/philhannant/Proposal/Proposal.pdf" "Proposal" 1459185753
+  "/Users/philhannant/Proposal/Proposal.aux" 1459185753 1058 ce285ff9a40abea18250679dc6a8209c ""
+  "/Users/philhannant/Proposal/Proposal.tex" 1459185750 10819 2ec538c3e3f8c1388110f259363e368e ""
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
+  "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -16,6 +17,7 @@
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
+  "/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
@@ -50,12 +52,12 @@
   "/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1432479641 1764542 91654ba72bdb667e84ea24f076ae16d8 ""
   "/usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt" 1457264687 3849858 7e29a5a5da7f121efe62c50b21a1f5dd ""
   "/usr/local/texlive/2015/texmf.cnf" 1432479636 577 0d611272082f3cdb8e80e09a3c69cf07 ""
-  "Proposal.aux" 1459179048 1054 3046be26bf9599e7a7831ac1290f276b ""
-  "Proposal.tex" 1459179045 9378 29f85799efc2c372efe3bc201e7b98b2 ""
+  "Proposal.aux" 1459185753 1058 ce285ff9a40abea18250679dc6a8209c ""
+  "Proposal.tex" 1459185750 10819 2ec538c3e3f8c1388110f259363e368e ""
   "images/dt-1_ss_main_notation_gal.jpg" 1458595009 139320 af842537a3b90a62cb9f5df3cd31efea ""
   (generated)
-  "Proposal.pdf"
-  "Proposal.log"
   "Proposal.aux"
+  "Proposal.log"
+  "Proposal.pdf"
   "/Users/philhannant/Proposal/Proposal.log"
   "/Users/philhannant/Proposal/Proposal.pdf"
