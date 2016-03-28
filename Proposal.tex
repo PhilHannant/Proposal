@@ -49,8 +49,6 @@ To date, the majority beat detection software has focused mainly on the dj indus
 
 \maketitle{} \section{Aims and Objectives}
 
-
-
 As part of my project I propose to build a real time drumbeat tempo analyser, this will use a combination of existing libraries in order to provide a basis for the creation of a live drumming tempo training tool. I will elaborate on the key features of this work in the following sections.
 
  which wiill implement a variety of different wave analysis algorithms. sound energy analysis and discrete wavelet transform technologies. I will provide more details regarding the system architecture in the following sections. 
@@ -58,13 +56,6 @@ As part of my project I propose to build a real time drumbeat tempo analyser, th
 Investigate with a sole focus on drums how accurate/reliable the beatroot and discrete wavelet transform algorithms are in order to ascertain how viable a future mobile metronome and drum tempo training application would be.
 
 
-
-\subsection{Proposed Architecture}
-In order to function sufficiently the system will need to encompass the following features:
-
-The open sourced JWave library includes a Java implementation of the Discrete Wavelet Transform (DFT) algorithm.
-
-Beatroot has 
 
 \subsection{Core Project Features}
 \begin{itemize}
@@ -84,7 +75,22 @@ Beatroot has
 \maketitle{} 
 \section{Development Plan for the Solution}
 
-In order to successfully carry out this task the JWave and Beatroot APIs will need to be set up in the choosen IDE, 
+The first part of this project involves the setting 
+
+\subsection{Live Audio Processing}
+In order to capture and process live audio the Javax Sound package will be ulitlised, where the audio will be captured using the Java Line hierachy; specifically the TargetDataLine class, which requires an instance of the Javax Sound AudioFormat class to be parsed in to work. The AudioFormat class is made up of a number of constructed fields which are defined as follows:
+
+\begin{itemize}
+\item Encoding - This will be set to ``''PCM.signed``'', representing audio encoded to the native linea pulse code modulation, where quantization levels are linearly uniform [https://en.wikipedia.org/wiki/Pulse-code_modulation].
+\item Sample Rate - 44,100, set to match cd quality for the number of analogs samples which will be analysed per second. 
+\item Sample Size in Bits - 24, based on a sound card with a 24 bit sample depth.
+\item Channels - 2, audio will be captured using a stereo microphone.
+\item Frame Size - 6, where frame size equals the number of bytes in a sample multiplied by the number of channels.
+\item Frame Rate - 44,100, same as sample rate.
+\item Big Endian (boolean) - false, as the project will be developed on an Intel core which uses a little endian architecture. Where endianess refers to the order of bytes which make up a digital word, with big endianess storing the most significant byte at a certain memory address and the remaining bytes being stored in the following higher memory addresses. The little-endian formate reverses the order storing the least significant at the lowest and most siginicant at the highest memory address [https://en.wikipedia.org/wiki/Endianness].
+\end{itemize}
+
+\subsection{}
 
 \subsection{Overview of External Libraries}
 
