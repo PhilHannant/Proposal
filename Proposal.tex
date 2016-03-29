@@ -29,7 +29,7 @@ Having played the drums for nearly twenty years I have experienced a number of d
 6, 3, 7, 2, 1
 \includegraphics[scale=0.2]{dt-1_ss_main_notation_gal} 
 
-\subsection{Current Systems}
+\subsection{Beat Detection}
 
 Detecting musical time is a skill which is not only a fundamental musical skill [1] but also something that can seemingly come naturally to humans, the majority being able to analyse and reproduce discrete metrical stuctures of a piece of music [2]. Producing algorithms to replicate this nature human ability is probably first attempted by Longuet-Higgins [1], where he began to consider that rhythm as a binary tree with each node representing a note or rest. This theory developed into a system which would use a static tolerence limit on how much a the downbeats varied and enabling the perceived tempo to be adjusted accordingly [add longuet references]. Since Longuet-Higgins first work there have been a number of different approaches to beat detection in audio, M. Goto and Y. Muraoka created a system which would learn the frequencies of the bass drum and snare drum, in order to then detect events triggered by these instruments during a piece of music [Goto \& muroaka]. In 2001 Simon Dixon presented a system which uses processed a piece of audio in order to generate a tempo hypotheses at various metrical levels, multiple agents were then employed to find the sequence of beat times which best matched the salient rhythmic events which were originally detected.
 
@@ -41,7 +41,6 @@ systems developed to perform beat tracking and temporal analysis with the majori
 
 This method however was not considered accurate enough to fully replicate the skill of a trained musician at beat detection, it was soon recognised that onset detection would play a fundamental part in any future beat detection algorithms. Where the an indicator of a new onset is seen as ``an increase in energy (or amplitude) within some frequency band(s)'' [4].
 
-Need to include the different types of 
 
 Due to the rapidly expanding research being carried out on beat detection, in 2005 the 1st annual Music Information Retrieval Evaluation eXchange (MIREX) was held. MIREX has been set up as a contest with the goal of comparing state-of-the-art algorithms and music information retrieval [MIREX website]. The topics to be evaluated were proposed by the participants and in the first year, three of the nine topics concerned beat detection (Audio Drum Detection, Audio Onset Detection and Audio Tempo Extraction).  
 
@@ -51,16 +50,42 @@ Light version of beatroot and DWT
 
 Needs to add history of all the work carried out on audio analysis with an emphasis on tempo detection
 
-Beat detection and tempo analysis is a fundamental skill honed by musicians and in particularly drummers, their ability to perform at a consistent tempo determines a piece of musics rhythm. 
 
 To date, the majority beat detection software has focused mainly on the dj industry where tempo and beat matching are popular aspects to be included in modern dj programs. There are however other sectors of the music industry would find beat detection software a useful, in particular, drummers could find it an enormously useful training tool. There are currently many systems available to a drummer, 
 
 
 
 
-\subsection{Beatroot and JWave}
+\subsection{Beatroot}
+Beatroot is an audio beat tracking system which was first presented by Simon Dixon in the 2002 paper ``On the analysis of musical expression in audio signals''. The system is described as ``an off-line beat tracking system which finds the times of musical beats and tracks changes in tempo throughout a performance'' [dixon 2002]. Beatroot uses two interacting processes in order to process audio; 1) Tempo induction calculated from the rate of detected beats and 2)Beat tracking produced by the synchronising the pulse sequences detected within the audio signal. These processes are performed using the following steps:
 
-\maketitle{} \section{Aims and Objectives}
+\begin{enumerate}
+\item The audio signal is first passed through a spectral flux onset detection function which uses the short-term Fourier transform (further detailed provided in the following section). 
+\item A clustering algorithm is then employed to find all of the significant metrical units within the signal, these clusters are then compared and ranked accordingly to produce a set of tempo hypotheses.
+\item A multiple agent architecture is ultised to to match the sequences of detected beats, where each agent represents a specific tempo value and alignment of beats with the audio signal.
+\item Finally, the agents are then evaluated against the original hypothesised beats and the highest ranked sequence is then returned as the solution.
+\end{enumerate}
+
+\subsubsection{Spectral Flux Onset Detection}
+
+
+\subsubsection{Short-Term Fourier Transform}
+The Short-Term Fourier Transform (STFT) is based on the original Fourier Transform (FT) which was developed by Joseph Fourier in 1822, which can be used to find out how much of each frequency exists in a signal. The STFT was developed in order to solve provide a solution to the fact that the Fourier Transform does not work on non-stationary signals which results in it not being possible to used to find out when a frequency exists in the time-domain [polikar 2]. The STFT solved this issue by dividing the signal into a number smaller segments using a window function, which effectively created a series of stationary signals which the Fourier Transform could be successfully used on. This however did not fully solve the problem as the size of window function used had an effect on the the quality of frequency resolution and time resolution:
+
+\begin{itemize}
+\item Narrow Window Function \longrightarrow  Good Time Resolution, Bad Frequency Resolution
+\item Wide Window Function \longrightarrow  Bad Time Resolution, Good Frequency Resolution
+\end{itemize}
+
+
+
+
+\subsubsection{The Discrete Wavelet Transform}
+The Discrete Wavelet Transform was developed in order to provide an alternative to the Short Time Fourier Transform (STFT) in order to overcome the issues related to it's frequency and time resolution properties, example. Due to the DWT's ability to provide high time and low frequency resolution for high frequencies, and high frequency and low time resolution for low frequencies it is considered to share similar time-frequency resolution characteristics with the human ear [DWT Tzanetakis et al].
+
+Beat detection using the DWT is split into 
+\maketitle{}
+\section{Aims and Objectives}
 
 As part of my project I propose to build a real time drumbeat tempo analyser, this will use a combination of existing libraries in order to provide a basis for the creation of a live drumming tempo training tool. I will elaborate on the key features of this work in the following sections.
 
@@ -173,5 +198,6 @@ https://en.wikipedia.org/wiki/Pulse-code\_modulation
 http://www.jsresources.org/faq\_audio.html\#frame\_rate
 https://en.wikipedia.org/wiki/Onset\_(audio)
 http://www.music-ir.org/mirex/wiki/2016:Audio\_Onset\_Detection
+http://users.rowan.edu/~polikar/WAVELETS/WTpart2.html
 
 \end{document}
