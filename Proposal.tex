@@ -71,19 +71,30 @@ Beatroot is an audio beat tracking system which was first presented by Simon Dix
 
 \subsubsection{Short-Term Fourier Transform}
 The Short-Term Fourier Transform (STFT) is based on the original Fourier Transform (FT) which was developed by Joseph Fourier in 1822, which can be used to find out how much of each frequency exists in a signal. The STFT was developed in order to solve provide a solution to the fact that the Fourier Transform does not work on non-stationary signals which results in it not being possible to used to find out when a frequency exists in the time-domain [polikar 2]. The STFT solved this issue by dividing the signal into a number smaller segments using a window function, which effectively created a series of stationary signals which the Fourier Transform could be successfully used on. This however did not fully solve the problem as the size of window function used had an effect on the the quality of frequency resolution and time resolution:
-
+[polikar3]
 \begin{itemize}
 \item Narrow Window Function \longrightarrow  Good Time Resolution, Bad Frequency Resolution
 \item Wide Window Function \longrightarrow  Bad Time Resolution, Good Frequency Resolution
 \end{itemize}
 
+This was eventually solved by development of Wavelet Transforms which are capable of providing time and frequency information simultaneously in order to give a time-frequency representation of a signal, which are described in further detail in the next section.
 
+\subsection{Audio Analysis using the Discrete Wavelet Transform}
+The Discrete Wavelet Transform (DWT) is a form of wavelet transform which foundations go back to 1976 when Crosier, Estaban and Galand devised a technique to decompose discrete time signals [polikar]. The DWT uses digital filtering techniques like the orginal Continuous Wavelet Transform, however it is significantly easier to implement. The DWT works by passing the signal through a series of high pass filters to analyse the high frequencies and low pass filters to do the same to low frequencies. The low pass filtering results in the resolution being halved but leaves the scale unchanged and the high filtering halves the time-resolution but doubles the frequency resolution, which effectively reduces the uncertainty in the frequency by half [polikar 4]. Due to this, the DWT is considered to share similar time-frequency resolution characteristics with the human ear [DWT Tzanetakis et al].
 
+Tzanetakis, Essl and Cook described how the DWT could be used to extract information from non-speech audio, their beat detection algorithm was based on detecting the salient periodicities of the audio signal and was made up of the following steps[tzanetkis]. 
 
-\subsubsection{The Discrete Wavelet Transform}
-The Discrete Wavelet Transform was developed in order to provide an alternative to the Short Time Fourier Transform (STFT) in order to overcome the issues related to it's frequency and time resolution properties, example. Due to the DWT's ability to provide high time and low frequency resolution for high frequencies, and high frequency and low time resolution for low frequencies it is considered to share similar time-frequency resolution characteristics with the human ear [DWT Tzanetakis et al].
+\begin{enumerate}
+\item Signal decomposed into a number of octave frequency bands using DWT
+\item The subsequent time domain amplitude envelope is extracted for frequency each using low pass filtering, full wave rectification and downsampling
+\item Each band is then normalised
+\item The envelopes of each band are then summed together and an autocorrelation function is computed
+\end{enumerate}
 
-Beat detection using the DWT is split into 
+\subsubsection{JWave}
+JWave is 
+Unlike the STFT based beat detection tool, Beatroot there are not currently any 
+
 \maketitle{}
 \section{Aims and Objectives}
 
