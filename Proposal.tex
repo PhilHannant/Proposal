@@ -49,7 +49,7 @@ The Short-Time Fourier Transform (STFT) is based on the original Fourier Transfo
 
 This was eventually solved by development of the Wavelet Transforms which are capable of providing time and frequency information simultaneously in order to give a time-frequency representation of a signal, these are described in more detail in the next section.
 
-\subsection{Discrete Wavelet Transform}
+\subsubsection{Discrete Wavelet Transform}
 The Discrete Wavelet Transform (DWT) is a form of wavelet transform which foundations go back to 1976 when Crosier, Estaban and Galand devised a technique to decompose discrete time signals [11]. The DWT uses digital filtering techniques like the orginal Continuous Wavelet Transform, however it is significantly easier to implement. The DWT works by passing the signal through a series of high pass filters to analyse the high frequencies and low pass filters to do the same to low frequencies. The low pass filtering results in the resolution being halved but leaves the scale unchanged and the high filtering halves the time-resolution but doubles the frequency resolution, which effectively reduces the uncertainty in the frequency by half [11]. Due to this, the DWT is considered to share similar time-frequency resolution characteristics with the human ear [12].
 
 
