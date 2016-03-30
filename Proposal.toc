@@ -1,16 +1,17 @@
 \contentsline {section}{\numberline {1}Introduction \& Background}{3}
-\contentsline {subsection}{\numberline {1.1}Beat Detection}{3}
-\contentsline {subsection}{\numberline {1.2}Beatroot}{4}
-\contentsline {subsubsection}{\numberline {1.2.1}Spectral Flux Onset Detection}{4}
-\contentsline {subsubsection}{\numberline {1.2.2}Short-Term Fourier Transform}{4}
-\contentsline {subsubsection}{\numberline {1.2.3}The Discrete Wavelet Transform}{5}
+\contentsline {subsection}{\numberline {1.1}Beat Detection Background}{3}
+\contentsline {subsubsection}{\numberline {1.1.1}Onset Detection}{4}
+\contentsline {subsubsection}{\numberline {1.1.2}Short-Term Fourier Transform}{4}
+\contentsline {subsection}{\numberline {1.2}Audio Analysis using the Discrete Wavelet Transform}{4}
 \contentsline {section}{\numberline {2}Aims and Objectives}{5}
 \contentsline {subsection}{\numberline {2.1}Core Project Features}{5}
 \contentsline {subsection}{\numberline {2.2}Non-Core Project Features}{5}
 \contentsline {section}{\numberline {3}Development Plan for the Solution}{5}
-\contentsline {subsection}{\numberline {3.1}Live Audio Processing}{6}
-\contentsline {subsection}{\numberline {3.2}Comparative analysis of Beatroot and JWave}{6}
-\contentsline {subsection}{\numberline {3.3}Develop GUI \& logging system}{6}
-\contentsline {subsection}{\numberline {3.4}Build Extensive drum sample set}{6}
-\contentsline {section}{\numberline {4}Project Schedule}{7}
-\contentsline {section}{\numberline {5}References}{7}
+\contentsline {subsection}{\numberline {3.1}Beatroot}{5}
+\contentsline {subsubsection}{\numberline {3.1.1}JWave and Beat Detection algorithm}{6}
+\contentsline {subsection}{\numberline {3.2}Live Audio Processing}{6}
+\contentsline {subsection}{\numberline {3.3}Comparative analysis of Beatroot and JWave}{7}
+\contentsline {subsection}{\numberline {3.4}Develop GUI \& logging system}{7}
+\contentsline {subsection}{\numberline {3.5}Build Extensive drum sample set}{7}
+\contentsline {section}{\numberline {4}Project Schedule}{8}
+\contentsline {section}{\numberline {5}References}{9}

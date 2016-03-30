@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.6)  29 MAR 2016 23:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.6)  30 MAR 2016 14:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -197,63 +197,59 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: images/dt-1_ss_main_notation_gal.jpg Graphic file (type jpg)
 <use images/dt-1_ss_main_notation_gal.jpg>
 Package pdftex.def Info: images/dt-1_ss_main_notation_gal.jpg used on input lin
-e 30.
-(pdftex.def)             Requested size: 182.67926pt x 133.69713pt.
+e 32.
+(pdftex.def)             Requested size: 228.35257pt x 167.12396pt.
 [3
 
- </Users/philhannant/Proposal/images/dt-1_ss_main_notation_gal.jpg>] [4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 92.
+ </Users/philhannant/Proposal/images/dt-1_ss_main_notation_gal.jpg>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 52.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 92.
-[5] [6]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 148.
-
-
-Overfull \hbox (81.09154pt too wide) in paragraph at lines 188--194
-\OT1/cmr/m/n/10.95 http://www.roland.co.uk/blog/exploring-roland-dt-1-v-drums-t
-utor-software/ https://en.wikipedia.org/wiki/Pulse-
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 52.
+[4] [5] [6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 182--182
+[]\OT1/cmr/m/n/10.95 w/c 12th Septem-ber
  []
 
 
-Overfull \hbox (94.00044pt too wide) in paragraph at lines 188--194
-\OT1/cmr/m/n/10.95 code[]modulation http://www.jsresources.org/faq[]audio.html#
-frame[]rate https://en.wikipedia.org/wiki/Onset[](audio)
+Underfull \hbox (badness 10000) in paragraph at lines 184--184
+[]\OT1/cmr/m/n/10.95 w/c 19th Septem-ber
  []
 
+[8
 
-Overfull \hbox (142.05269pt too wide) in paragraph at lines 188--194
-\OT1/cmr/m/n/10.95 http://www.music-ir.org/mirex/wiki/2016:Audio[]Onset[]Detect
-ion http://users.rowan.edu/ po-likar/WAVELETS/WTpart2.html 
+]
+Underfull \hbox (badness 10000) in paragraph at lines 191--198
+
  []
 
-[7] (/Users/philhannant/Proposal/Proposal.aux) ) 
+[9
+
+] (/Users/philhannant/Proposal/Proposal.aux) ) 
 Here is how much of TeX's memory you used:
- 2785 strings out of 493089
- 40055 string characters out of 6134843
- 119820 words of memory out of 5000000
- 6224 multiletter control sequences out of 15000+600000
+ 2786 strings out of 493089
+ 40061 string characters out of 6134843
+ 117820 words of memory out of 5000000
+ 6225 multiletter control sequences out of 15000+600000
  8811 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,9n,35p,1384b,236s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb>
-Output written on /Users/philhannant/Proposal/Proposal.pdf (7 pages, 259700 byt
+ 38i,10n,35p,1380b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb>
+Output written on /Users/philhannant/Proposal/Proposal.pdf (9 pages, 262616 byt
 es).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 67 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
