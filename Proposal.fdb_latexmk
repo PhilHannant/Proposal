@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1459343739 "/Users/philhannant/Proposal/Proposal.tex" "/Users/philhannant/Proposal/Proposal.pdf" "Proposal" 1459343739
-  "/Users/philhannant/Proposal/Proposal.aux" 1459343739 1780 7b0901ecad2789c25ea8065618678f6d ""
-  "/Users/philhannant/Proposal/Proposal.tex" 1459343737 17830 47758cb9d9cb2037a532a7d643fd6bf3 ""
+["pdflatex"] 1459362508 "/Users/philhannant/Proposal/Proposal.tex" "/Users/philhannant/Proposal/Proposal.pdf" "Proposal" 1459362509
+  "/Users/philhannant/Proposal/Proposal.aux" 1459362509 2233 18e58c3794e69e0a396046790802b058 ""
+  "/Users/philhannant/Proposal/Proposal.tex" 1459362507 21990 26654cb19537e39e65653b331fd0a0dc ""
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -64,14 +64,14 @@
   "/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1432479641 1764542 91654ba72bdb667e84ea24f076ae16d8 ""
   "/usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt" 1457264687 3849858 7e29a5a5da7f121efe62c50b21a1f5dd ""
   "/usr/local/texlive/2015/texmf.cnf" 1432479636 577 0d611272082f3cdb8e80e09a3c69cf07 ""
-  "Proposal.aux" 1459343739 1780 7b0901ecad2789c25ea8065618678f6d ""
-  "Proposal.tex" 1459343737 17830 47758cb9d9cb2037a532a7d643fd6bf3 ""
-  "Proposal.toc" 1459343739 1257 4edacb52dac32421dfb2fcde175fdb8b ""
+  "Proposal.aux" 1459362509 2233 18e58c3794e69e0a396046790802b058 ""
+  "Proposal.tex" 1459362507 21990 26654cb19537e39e65653b331fd0a0dc ""
+  "Proposal.toc" 1459362509 1620 a736a925cb91b451330e61c0bd02f930 ""
   "images/dt-1_ss_main_notation_gal.jpg" 1458595009 139320 af842537a3b90a62cb9f5df3cd31efea ""
   (generated)
   "Proposal.pdf"
-  "Proposal.aux"
-  "/Users/philhannant/Proposal/Proposal.pdf"
-  "Proposal.toc"
-  "/Users/philhannant/Proposal/Proposal.log"
   "Proposal.log"
+  "Proposal.toc"
+  "Proposal.aux"
+  "/Users/philhannant/Proposal/Proposal.log"
+  "/Users/philhannant/Proposal/Proposal.pdf"
