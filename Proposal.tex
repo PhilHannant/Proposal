@@ -7,25 +7,47 @@
 \graphicspath{ {images/} }
 \usepackage{datetime}
 
-\begin{titlepage}
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH], \THEYEAR}
+
+\date{}
+\begin{document} 
 
 \LARGE\title{Real Time Tempo Analysis of Drum Beats}
 
-\LARGE\author{Author: \textbf{Philip Hannant}, Supervisor: \textbf{Professor Steve Maybank}}
+\LARGE\author{Author: \textbf{Philip Hannant}, Supervisor: \textbf{Professor Steve Maybank}\\
+\\Birkbeck, University of London\\
+Department of Computer Science and Information Systems\\
+\\Project Proposal\\
+MSc Computer Science\\
+\\\monthyeardate\today
+}
 
 
 
-\end{titlepage}
 
-\begin{document} 
+
+\normalsize
+
 
 \maketitle
 \newpage
 \tableofcontents
 \clearpage
 
-\maketitle{} \section{Introduction \& Background}
-Having played the drums for nearly twenty years I have used a number of different training tools to help improve my timing. These tools have always been exclusive to midi driven electric drum kits, which are able to include training tools within their drum modules that use the events being triggered by the player to give live feedback on the exact timing and instrument being played. An example of such a system is the Roland DT-1 V-Drums tutor which is a software package that can be connected to a Roland V-Drum module in order to provide the player with an interactive experience that helps a drummer improve their rhythm, coordination and sight reading [1]. Such an extensive and accurate range of tutoring functions is only made possible by the midi events that are intrinsic to an electronic drum kits function. (an example of the GUI can be found in figure 1). These tutoring tools are not however available to a drummer who does not own an electronic drum kit, such a player is restricted to using a metronome and their ear to determine their timing and rhythm. To address this, I intend to investigate the current audio tempo analysis and beat tracking algorithms available solely for the purpose of being implemented within an drum tutoring software package for the use with acoustic drums.
+\section*{Definitions}
+\begin{tabular}{l p{4.5in}  }
+\textbf{MIDI} & Musical Instrument Digital Interface is a protocol developed in the 1980's which allows electronic instruments and other digital musical tools to communicate with each other [22].\\\\
+\textbf{Acoustic Drum Kit} & A collection of drums and cymbals which do not have electronic amplification. Typically made up of a bass drum, snare drum, tom-toms, hi-hat and 1 or more cymbals.\\\\
+\textbf{Electronic Drum Kit} & An electrical device which is played like an acoustic drum kit, which produces sounds from a stored library of instruments and samples.\\\\
+\textbf{Drum Module} & The device which serves as a central processing unit for the electric drum kit, responsible for producing the sounds of the drum kit.\\
+\textbf{Beat} & 
+\textbf{Downbeat} & The first beat of a piece of music.\\
+\end{tabular}
+\clearpage
+
+\maketitle{} \section{Introduction and Background}
+Having played the drums for nearly twenty years I have used a number of different training tools to help improve my timing. These tools have always been exclusive to midi driven electronic drum kits, which are able to include training tools within their drum modules that use the events being triggered by the player to give live feedback on the exact timing and instrument being played. An example of such a system is the Roland DT-1 V-Drums tutor which is a software package that can be connected to a Roland V-Drum module in order to provide the player with an interactive experience that helps drummers improve their rhythm, coordination and sight reading [1]. Such an extensive and accurate range of tutoring functions is only made possible by the midi events that are intrinsic to an electronic drum kits function. (an example of the GUI can be found in figure 1). These tutoring tools are not however available to a drummer who does not own an electronic drum kit. Such a player is restricted to using a metronome and his/her ear to determine his/her timing and rhythm. To address this, I intend to investigate the accuracy of some of the available audio tempo analysis and beat tracking algorithms with the focus on whether it is possible to implement them in drum tutoring software for acoustic drums.
 \begin{figure}[h]
 \caption{Example of Roland DT-1 V-Drums tutor GUI [1]}
 	\centering
@@ -33,15 +55,15 @@ Having played the drums for nearly twenty years I have used a number of differen
 \end{figure}
 \subsection{Beat Detection Background}
 
-Detecting musical time is a skill which is not only fundamental to musicians [2] but also something that seemingly comes naturally to humans, the majority being able to analyse and reproduce discrete metrical structures of a piece of music [3]. Producing algorithms to replicate this human ability was probably first attempted by Longuet-Higgins [2], where he began to consider that rhythm as a binary tree with each node representing a note or rest [4]. This theory developed into a system which would use a static tolerance limit on how much the downbeats varied, enabling the perceived tempo to be adjusted accordingly [2]. Since Longuet-Higgins first work there have been a number of different approaches to beat detection in audio, M. Goto and Y. Muraoka created a system which would learn the frequencies of the bass drum and snare drum, in order to then detect events triggered by these instruments during a piece of music [5]. Simon Dixon presented a system which processed a piece of audio in order to generate a tempo hypotheses at various metrical levels, multiple agents were then employed to find the sequence of beat times which best matched the salient rhythmic events which were originally detected [6].
+Detecting musical time is a skill which is not only fundamental to musicians [2] but also something that seemingly comes naturally to all humans. The majority are able to analyse and reproduce discrete metrical structures of a piece of music [3]. Longuet-Higgins [2] was one of the first to producing an algorithms to replicate this human ability, he constructed a binary tree with each node representing a note or rest [4]. He then developed his theory into a system that was able to react to how much the downbeats of a piece of music varied, which enabled the calculated tempo to be adjusted accordingly [2]. Since Longuet-Higgins' first work there have been a number of different approaches to beat detection in audio. M. Goto and Y. Muraoka created a system which learned the frequencies of the bass drum and snare drum, in order to detect events triggered by these instruments during a piece of music [5]. Simon Dixon [6] presented a system which processed a piece of audio in order to generate tempo hypotheses at various metrical levels. Multiple agents were then employed to find the sequence of beat times which best matched the beats which were originally detected [6].
 
-Due to the rapidly expanding research being carried out on beat detection, the 1st annual Music Information Retrieval Evaluation eXchange (MIREX) was held in 2005. MIREX has been set up as a contest with the goal of comparing state-of-the-art algorithms and music information retrieval [7]. The topics to be evaluated were proposed by the participants and in the first year, three of the nine topics concerned beat detection (Audio Drum Detection, Audio Onset Detection and Audio Tempo Extraction). To date, the majority beat detection software has focused mainly on the DJ industry where tempo and beat matching are popular aspects to be included in modern DJ programs. There are however other sectors of the music industry which would find beat detection software a useful, drummers in particular, would find it an enormously useful training tool.
+Due to the rapidly expanding research being carried out on beat detection, the 1st annual Music Information Retrieval Evaluation eXchange (MIREX) was held in 2005. MIREX includes a contest with the goal of comparing state-of-the-art algorithms for music information retrieval [7]. The topics to be evaluated were proposed by the participants. In the first year, three of the nine topics concerned beat detection (Audio Drum Detection, Audio Onset Detection and Audio Tempo Extraction). To date, most beat detection software has been written for DJ industry where tempo and beat matching are popular functions to be included in modern DJ programs. There are however other sectors of the music industry which would find beat detection software useful. Drummers in particular, would find it an enormously useful training tool.
 
 \subsubsection{Onset Detection}
 Most of the beat detection methods to date use an onset detection function [19], the audio onset is considered to be the beginning of each music note within a piece of music[8] and therefore can be used to find time-locations within all sonic events in a piece of music [9]. 
 
 \subsubsection{Short-Time Fourier Transform}
-The Short-Time Fourier Transform (STFT) is based on the original Fourier Transform (FT) which was developed by Joseph Fourier in 1822, which can be used to find out how much of each frequency exists in a signal. The STFT was developed in order to provide a solution to the fact that the Fourier Transform does not work on non-stationary signals which results in it not being possible to be used to find out when a frequency exists in the time-domain [10]. The STFT solved this issue by dividing the signal into a number smaller segments using a window function, which effectively created a series of stationary signals which the Fourier Transform could be successfully used on. This however did not fully solve the problem as the size of window function used had an effect on the the quality of frequency resolution and time resolution:
+The Short-Time Fourier Transform (STFT) is based on the original Fourier transform (FT) which was developed by Joseph Fourier in 1822. The Fourier Transform can be used to find out how much of each frequency exists in a signal. The STFT was developed in order to provide a solution to the fact that the Fourier Transform does not work on non-stationary signals which results in it not being possible to be used to find out when a frequency exists in the time-domain [10]. The STFT solved this issue by dividing the signal into a number of smaller segments using a window function, which effectively created a series of stationary signals which the Fourier Transform could be successfully applied. This however did not fully solve the problem as the size of window function affects the quality of frequency resolution and time resolution:
 \begin{itemize}
 \item Narrow Window Function $\longrightarrow$  Good Time Resolution, Bad Frequency Resolution
 \item Wide Window Function $\longrightarrow$  Bad Time Resolution, Good Frequency Resolution [10]
@@ -59,12 +81,12 @@ The Discrete Wavelet Transform (DWT) is a form of wavelet transform which founda
 \maketitle{}
 \section{Aims and Objectives}
 
-As part of my project I propose to build a real time drumbeat tempo analyser, this will use a combination of existing libraries in order to provide a basis for the creation of a live drumming tempo training tool. I will elaborate on the key features of this work in the following sections.
+As part of my project I propose to build a real time drumbeat tempo analyser. This will use a combination of existing libraries as a basis for the creation of a live drumming tempo training tool. I will elaborate on the key features of this work in the following sections.
 
 
 \subsection{Core Project Features}
 \begin{itemize}
-\item Adapt Eng Eder de Souza Matlab implementation of the beat tracking algorithm described by Tzanentkis, Essl and Cook [12] 
+\item Adapt the Eng Eder de Souza Matlab implementation of the beat tracking algorithm described by Tzanentkis, Essl and Cook [12] 
 \item Record detailed comparative information regarding the efficiency and accuracy of the Beatroot and DWT implementation using JWave
 \item Live audio capturing and processing
 \item Build and test an extensive sample set of drum beats at varying tempos and velocities in order to ensure the system is tested against as close to a real drummer as possible
@@ -104,7 +126,7 @@ JWave is a Java library created by Christian Scheiblich which provides a number 
 
 There currently is not an open source Java implementation of this algorithm, however there is a Matlab implementation of Tzanetkis, Essl \& Cook's algorithm which has been created by Eng Eder de Souza [20]. This will form the basis for the DWT based beat detection component of this project.
 
-\subsection{Comparative analysis of Beatroot and JWave}
+\subsection{Comparative Analysis of Beatroot and JWave}
 A key part of this project is to ascertain whether the technologies currently available are accurate enough to create a training tool similar to the midi based software described in section 1. To achieve this the 2 libraries will need to be run in parallel with the same captured audio and return details on the calculated tempo, number of beats detected and the processing speed. 
 
 The tempo will be the beats per minute (bpm) recorded at the end of each processed frame, all of the bpm's within the sample set will be exact and in order to match the current midi software packages accuracy any returned bpm's should be exact as well. However, very small deviations in tempo can be very hard to detect to the human ear so some margin of error will be applied. To account for the fact that at the slower bpm's any beat out of place will be a lot easier to hear than at a higher bpm, the margin for error will be weighted by using the following equation;
@@ -129,7 +151,7 @@ In order to capture and process live audio the Javax Sound package will be utili
 \end{itemize}
 
 
-\subsection{Build Extensive drum sample set}
+\subsection{Build Extensive Drum Sample Set}
 The success of this project will rely heavily on the amount of data that the system can produce and in order to do this a large set of drum beat samples will need to be created. The drum beats themselves will be created using the midi drumbeats within the Apple software package, Garageband. The sample set will need to contains beats from a variety of styles as well as samples with fluctuating tempos. The main aspects of the sample set can be found below:
 
 \begin{itemize}
@@ -232,5 +254,6 @@ I have proposed to build a real-time drumbeat tempo analysis system using the Sh
 \item A. Robertson, A. Stark and M. E. P. Davies (2013), Percussive Beat tracking using real-time median filtering, 6th International Workshop on Machine Learning and Music
 \item https://github.com/ederwander/Beat-Track
 \item http://www.json.org/xml.html
+\item http://www.instructables.com/id/What-is-MIDI/
 \end{enumerate}
 \end{document}
