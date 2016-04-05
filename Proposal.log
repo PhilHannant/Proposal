@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.6)  6 APR 2016 00:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.6)  6 APR 2016 00:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -215,21 +215,21 @@ set.jpg, id=24, 531.9875pt x 315.1775pt>
 File: images/Onset.jpg Graphic file (type jpg)
 <use images/Onset.jpg>
 Package pdftex.def Info: images/Onset.jpg used on input line 79.
-(pdftex.def)             Requested size: 132.99655pt x 78.79417pt.
+(pdftex.def)             Requested size: 212.79123pt x 126.06876pt.
 [5 </Users/philhannant/Proposal/images/Onset.jpg>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 90.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 85.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 90.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 85.
 [6] [7] [8] [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 234--234
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
 []\OT1/cmr/m/n/10.95 w/c 12th Septem-ber
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--236
+Underfull \hbox (badness 10000) in paragraph at lines 231--231
 []\OT1/cmr/m/n/10.95 w/c 19th Septem-ber
  []
 
@@ -245,7 +245,7 @@ Here is how much of TeX's memory you used:
  6236 multiletter control sequences out of 15000+600000
  9723 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,10n,35p,1352b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,10n,35p,1355b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf
@@ -257,7 +257,7 @@ onts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/font
 s/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy10.pfb>
-Output written on /Users/philhannant/Proposal/Proposal.pdf (13 pages, 328037 by
+Output written on /Users/philhannant/Proposal/Proposal.pdf (13 pages, 327828 by
 tes).
 PDF statistics:
  89 PDF objects out of 1000 (max. 8388607)
