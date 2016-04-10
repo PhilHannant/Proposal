@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {2.1}Core Project Features}{6}
 \contentsline {subsection}{\numberline {2.2}Non-Core Project Features}{6}
 \contentsline {section}{\numberline {3}Development Plan for the Solution}{6}
-\contentsline {subsection}{\numberline {3.1}Live Audio Processing}{6}
+\contentsline {subsection}{\numberline {3.1}Live Audio Processing}{7}
 \contentsline {subsection}{\numberline {3.2}JWave}{7}
 \contentsline {subsection}{\numberline {3.3}Comparative Analysis of Beatroot and JWave}{7}
 \contentsline {subsection}{\numberline {3.4}Build Extensive Drum Sample Set}{7}
@@ -17,7 +17,8 @@
 \contentsline {subsubsection}{\numberline {3.6.1}Frequency Learning}{8}
 \contentsline {subsubsection}{\numberline {3.6.2}Extended User Interface}{8}
 \contentsline {subsection}{\numberline {3.7}Project Methodology}{8}
-\contentsline {subsection}{\numberline {3.8}Development Languages and Testing}{9}
-\contentsline {section}{\numberline {4}Project Schedule}{10}
-\contentsline {section}{\numberline {5}Summary}{11}
-\contentsline {section}{\numberline {6}References}{11}
+\contentsline {subsection}{\numberline {3.8}Development Languages and Testing}{8}
+\contentsline {section}{\numberline {4}Challenges, Probability, Impact and Mitigation}{9}
+\contentsline {section}{\numberline {5}Project Schedule}{10}
+\contentsline {section}{\numberline {6}Summary}{11}
+\contentsline {section}{\numberline {7}References}{11}
