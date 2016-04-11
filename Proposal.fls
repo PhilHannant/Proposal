@@ -108,10 +108,15 @@ INPUT /Users/philhannant/Proposal/images/Onset.jpg
 INPUT /Users/philhannant/Proposal/images/Onset.jpg
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
 INPUT /Users/philhannant/Proposal/images/ProposedArch.png
 INPUT /Users/philhannant/Proposal/images/ProposedArch.png
 INPUT /Users/philhannant/Proposal/images/ProposedArch.png
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmti9.tfm
+INPUT /Users/philhannant/Proposal/images/FWR2.jpg
+INPUT /Users/philhannant/Proposal/images/FWR2.jpg
+INPUT /Users/philhannant/Proposal/images/FWR2.jpg
 INPUT /Users/philhannant/Proposal/Proposal.aux
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
@@ -124,3 +129,4 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb
